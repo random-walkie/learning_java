@@ -17,20 +17,20 @@ public class HelloJava2 {
 }
 
 class HelloComponent2 extends JComponent
-        implements MouseMotionListener { //MouseMotionListener is an interface
-    String theMessage;
-    int messageX = 125, messageY = 95; // Coordinates of the message
+        implements MouseMotionListener { // MouseMotionListener is an interface
+    String theMessage; // this is an instance variable
+    int messageX = 125, messageY = 95; // Coordinates of the message; these are also instance variables
 
-    public HelloComponent2(String message) {
+    public HelloComponent2(String message) { // this is a constructor
         theMessage = message;
-        addMouseMotionListener(this);
+        addMouseMotionListener(this); // this is an event listener
     }
 
     public void paintComponent(Graphics g) {
         g.drawString(theMessage, messageX, messageY);
     }
 
-    public void mouseDragged(MouseEvent e) {
+    public void mouseDragged(MouseEvent e) { // e is an Event object
         // Save the mouse coordinates and paint the message.
         messageX = e.getX();
         messageY = e.getY();
