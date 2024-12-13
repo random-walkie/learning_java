@@ -4,6 +4,9 @@ class Apple {
     private float mass;
     private float diameter = 1.0f;
     private int x, y;
+    public static final int SMALL = 0;
+    public static final int MEDIUM = 1;
+    public static final int LARGE = 2;
 
     public boolean isTouching(Apple other) {
         double xdiff = x - other.x;
@@ -16,6 +19,11 @@ class Apple {
         //        } else {
         //            return false;
         //        }
+    }
+
+    public static String[] getAppleSizes() {
+        // Return names for our constants
+        return new String[] { "SMALL", "MEDIUM", "LARGE" };
     }
 
     // setter and getter methods for mass
@@ -58,5 +66,13 @@ class Apple {
         System.out.println("  mass: " + mass);
         System.out.println("  diameter: " + diameter);
         System.out.println("  position: (" + x + ", " + y +")");
+        String[] niceNames = getAppleSizes();
+        if (diameter < 5.0f) {
+            System.out.println("This is a " + niceNames[SMALL] + " apple.");
+        } else if (diameter < 10.0f) {
+            System.out.println("This is a " + niceNames[MEDIUM] + " apple.");
+        } else {
+            System.out.println("This is a " + niceNames[LARGE] + " apple.");
+        }
     }
 }
