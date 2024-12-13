@@ -1,4 +1,4 @@
-package ch05.examples;
+package ch05.examples.game;
 
 public class Field {
     Apple a1 = new Apple();

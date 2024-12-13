@@ -1,4 +1,4 @@
-package ch05.examples;
+package ch05.examples.game;
 
 class Apple {
     private float mass;

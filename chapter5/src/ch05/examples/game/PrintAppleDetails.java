@@ -1,4 +1,4 @@
-package ch05.examples;
+package ch05.examples.game;
 
 public class PrintAppleDetails {
         public static void main(String[] args) {
