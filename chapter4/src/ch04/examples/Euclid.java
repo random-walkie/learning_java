@@ -1,3 +1,5 @@
+package ch04.examples;
+
 public class Euclid {
     public static int euclid(int a, int b) {
         while (b != 0) {

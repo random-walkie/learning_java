@@ -1,3 +1,5 @@
+package ch04.examples;
+
 public class Triangle {
     public static void triangle(int a){
         int[][] triangle = new int[a][];

@@ -1,14 +1,14 @@
-//file: HelloJava2.java
+package ch02.examples;//file: ch02.examples.HelloJava2.java
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
 public class HelloJava2 {
     public static void main(String[] args) {
-        JFrame frame = new JFrame("HelloJava2");
+        JFrame frame = new JFrame("ch02.examples.HelloJava2");
         frame.add(new HelloComponent2(args[0]));
         // the line above is equivalent to:
-        // HelloComponent2 newObject = new HelloComponent2(args[0]);
+        // ch02.examples.HelloComponent2 newObject = new ch02.examples.HelloComponent2(args[0]);
         // frame.add(newObject)
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(300, 300);
